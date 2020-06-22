@@ -43,7 +43,7 @@ export default class MovieCard extends Component {
 
 MovieCard.defaultProps = {
   title: 'Unknown', 
-  IMBDRating: null, 
+  IMDBRating: null,
   genres: ['No Genre(s) Found'], 
   poster: "default"
 }

@@ -15,7 +15,7 @@ export default class CardBack extends Component {
   return <img src={imgMapper[this.props.IMBDRating]} alt="" />
     }
   else {
-  return <h4>No Rating Found</h4>
+    return <h4>No Rating Found</h4>
     }
   }
 
