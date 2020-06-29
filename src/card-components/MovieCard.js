@@ -35,11 +35,11 @@ export default class MovieCard extends Component {
       <div className="movie-card">
         {/* Use the data from the posterMap object to access 
         the image files imported from assets/poster-imgs */}
-        <CardFront poster = {posterMap[this.props.poster]}/>
+        <CardFront poster={posterMap[this.props.poster]} attribute="something" />
         <CardBack 
-          title = {this.props.title} 
+          title={this.props.title} 
           IMDBRating = {this.props.IMDBRating} 
-          genre = {this.props.genres} 
+          genres = {this.props.genres} 
         />
       </div>
     ) } }

@@ -17,7 +17,7 @@ export default class CardBack extends Component {
   // Otherwise return an <img> tag with the src pointing to a image in assets/stars
   generateRatingElement = () => {
     return (this.props.IMDBRating == null) ? 
-     <h4> 'No Rating Found' </h4> : <img src={imgMapper[this.props.IMDBRating]} alt="IMDBRating" />
+     <h4>No Rating Found</h4> : <img src={imgMapper[this.props.IMDBRating]} alt="IMDBRating" />
   }
 
   render() {
@@ -27,8 +27,6 @@ export default class CardBack extends Component {
         <span />
         { this.generateRatingElement() }
         <span />
-        <h5 className="genres"> {this.props.genre.join(', ')} </h5>
+        <h5 className="genres"> {this.props.genres.join(', ')} </h5>
       </div>
-    )
-  }
-}
+    ) } }
